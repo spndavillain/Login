@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -24,49 +25,59 @@
   
   <ul class="nav nav-tabs ">
 
-    <li class="active"><a href="#"data-toggle="tab">List Of News</a></li>
-
-    <div class="secondtab">
-    <li><a href="#"data-toggle="tab">New News</a></li>
-    </div>
+    <li class="active"><a href="#ListOfNews"data-toggle="tab">List Of News</a></li>
+    <li id="secondTab"><a href="#NewNews"data-toggle="tab">New News</a></li>
 
     <div id="close">
     <button class="btn btn-default">Add News </button>
   </div>
 
   </ul>
-<div class="sidebar ">
-
-  <div>
-    <h2>Search</h2>
-  </div>
+  <div class="tab-content">
+      <div id="ListOfNews" class="tab-pane fade in active" >
+        
+          <h2>Search</h2>
+        
     
-      <h5>Title</h5>
-        <input type="text">
-      <h5>Date</h5>
-        <input type="text">
-      <h5>State</h5>
-      <select>
-        <option value="choose">Select</option>
-        <option value="published">published</option>
-        <option value="unpublished">unpublished</option>
-       </select>
-      <div class="search">
-        <button class="btn btn-default" id="serbtn">Search</button>
+            <h5>Title</h5>
+            <input type="text">
+            <h5>Date</h5>
+            <input type="text">
+            <h5>State</h5>
+              <select>
+                <option value="choose">Select</option>
+                <option value="published">published</option>
+                <option value="unpublished">unpublished</option>
+              </select>
+            <div class="search">
+              <button class="btn btn-default" id="serbtn">Search</button>
+            </div>
+        
       </div>
+      <div id="NewNews" class="tab-pane fade in active" >
+          
+
+      </div>
+
+    </div>
+
+
+  
     
-</div>
+
+
 <div class="content">
   
 </div>
 
+
+<script src="js/jquery-1.12.3.min.js"></script>
 <script>
   $(document).ready(function(){
 
-      $('close').
+      
   });
 
 </script>
-<script src="js/jquery-1.12.3.min.js"></script>
 </body>
 </html>
