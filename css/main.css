@@ -1,9 +1,19 @@
-#close{
+#close {
   float: right;
   display: block;
   margin-right:0px;
   
+}
+select{
+  display: block;
+  margin-bottom: 20px;
+}
 
+.search {
+  display: block;
+  margin-top: 10px;
+  margin-left: 95px;
+  padding-left: 10px;
 }
 
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/jquery-1.12.3.min.css"></script>
+  
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -23,15 +23,50 @@
 <div class="container">
   
   <ul class="nav nav-tabs ">
+
     <li class="active"><a href="#"data-toggle="tab">List Of News</a></li>
+
+    <div class="secondtab">
+    <li><a href="#"data-toggle="tab">New News</a></li>
+    </div>
+
     <div id="close">
     <button class="btn btn-default">Add News </button>
   </div>
+
   </ul>
+<div class="sidebar ">
 
-
+  <div>
+    <h2>Search</h2>
+  </div>
+    
+      <h5>Title</h5>
+        <input type="text">
+      <h5>Date</h5>
+        <input type="text">
+      <h5>State</h5>
+      <select>
+        <option value="choose">Select</option>
+        <option value="published">published</option>
+        <option value="unpublished">unpublished</option>
+       </select>
+      <div class="search">
+        <button class="btn btn-default" id="serbtn">Search</button>
+      </div>
+    
+</div>
+<div class="content">
+  
 </div>
 
+<script>
+  $(document).ready(function(){
 
+      $('close').
+  });
+
+</script>
+<script src="js/jquery-1.12.3.min.js"></script>
 </body>
 </html>
